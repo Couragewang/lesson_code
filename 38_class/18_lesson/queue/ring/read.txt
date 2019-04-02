@@ -1,0 +1,14 @@
+int ring[10];
+blank_sem = 10;
+data_sem = 0;
+
+
+Product:
+
+P:blank_sem
+V:data_sem
+
+
+Consume:
+P:data_sem
+V:blank_sem
